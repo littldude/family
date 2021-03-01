@@ -139,6 +139,9 @@ a {
     &--buy {
         width: 580px;
     }
+    &--mob {
+        display: none;
+    }
 }
 .subtitle {
     font-family: 'IBM Plex Sans', sans-serif;
@@ -203,6 +206,19 @@ a {
         box-shadow: 5px 5px 5px rgba(255, 181, 176, 0.4);
         opacity: .7;
         transition: .2s linear;
+    }
+    &--buy {
+        background-color: #8F5497;
+        color: #ffffff;
+        width: 90%;
+        border: none;
+        margin: 0 auto;
+        &:hover {
+            background-color: #F58688;
+            border: none;
+            transition: .2s linear;
+            cursor: pointer;
+        }
     }
 }
 .intro {
@@ -368,6 +384,21 @@ a {
         align-items: center;
         justify-content: space-between;
     }
+    &__form {
+        display: block;
+        margin: 50px auto 0 auto;
+    }
+    &__input {
+        display: block;
+        width: 90%;
+        height: 70px;
+        margin: 0 auto;
+        color: #4B2900;
+        border-radius: 90px;
+        padding: 20px;
+        font-size: 18px;
+        border: #8F5497 1px solid;
+    }
 }
 .footer {
     background-color: #ffffff;
@@ -517,6 +548,12 @@ a {
             padding: 0 6%;
             margin-bottom: 30px;
         }
+        &--desktop {
+            display: none;
+        }
+        &--mob {
+            display: block;
+        }
     }
     .text {
         &--intro {
@@ -644,8 +681,28 @@ a {
         }
     }
     .buy {
+        padding: 0 0 70px 0;
         &__inner {
-            flex-direction: column;
+            flex-direction: column-reverse;
+            &--item {
+                margin: 0;
+                img {
+                    width: 100%;
+                    display: block;
+                    margin: 0 auto;
+                }
+            }
+        }
+        &__form {
+            margin: 30px auto 0 auto;
+        }
+        &__input {
+            width: 530px;
+        }
+    }
+    .button {
+        &--buy {
+            width: 530px;
         }
     }
     .footer {
@@ -676,6 +733,11 @@ a {
             padding: 0 7%;
         }
     }
+    .button {
+        &--buy {
+            width: 100%;
+        }
+    }
     .autor {
         padding: 70px 0 0 0;
         &__inner {
@@ -685,7 +747,10 @@ a {
         }
     }
     .buy {
-        padding: 60px 0 0 0;
+        padding: 80px 0 50px 0;
+        &__form {
+            width: 100%;
+        }
     }
     .footer {
         &__inner {
@@ -809,6 +874,18 @@ a {
         font-size: 17px;
         line-height: 22px;
         padding: 18px 57px 19px 57px;
+        &--buy {
+            width: 400px;
+        }
+    }
+    .buy {
+        &__inner {
+            justify-content: center;
+        }
+        &__input {
+            width: 400px;
+            height: 50px;
+        }
     }
 }
 @media (max-width: 414px) {
@@ -843,14 +920,25 @@ a {
         }
     }
     .buy {
+        &__input {
+            width: 300px;
+        }
         &__inner {
             &--item {
                 img {
                     display: block;
-                    width: 80%;
+                    width: 70%;
                     margin: 0 auto;
                 }
             }
+        }
+        &__form {
+            margin: 10px auto 0 auto;
+        }
+    }
+    .button {
+        &--buy {
+            width: 300px;
         }
     }
     .footer {
@@ -902,6 +990,23 @@ a {
                 font-size: 15px;
                 line-height: 19px;
             }
+        }
+    }
+    .buy {
+        &__inner {
+            &--item {
+                img {
+                    width: 80%;
+                }
+            }
+        }
+        &__input {
+            width: 290px;
+        }
+    }
+    .button {
+        &--buy {
+            width: 290px;
         }
     }
 }

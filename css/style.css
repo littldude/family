@@ -129,6 +129,9 @@ a {
 .title--buy {
   width: 580px;
 }
+.title--mob {
+  display: none;
+}
 
 .subtitle {
   font-family: "IBM Plex Sans", sans-serif;
@@ -196,6 +199,19 @@ a {
   box-shadow: 5px 5px 5px rgba(255, 181, 176, 0.4);
   opacity: 0.7;
   transition: 0.2s linear;
+}
+.button--buy {
+  background-color: #8F5497;
+  color: #ffffff;
+  width: 90%;
+  border: none;
+  margin: 0 auto;
+}
+.button--buy:hover {
+  background-color: #F58688;
+  border: none;
+  transition: 0.2s linear;
+  cursor: pointer;
 }
 
 .intro {
@@ -344,6 +360,21 @@ a {
   align-items: center;
   justify-content: space-between;
 }
+.buy__form {
+  display: block;
+  margin: 50px auto 0 auto;
+}
+.buy__input {
+  display: block;
+  width: 90%;
+  height: 70px;
+  margin: 0 auto;
+  color: #4B2900;
+  border-radius: 90px;
+  padding: 20px;
+  font-size: 18px;
+  border: #8F5497 1px solid;
+}
 
 .footer {
   background-color: #ffffff;
@@ -460,6 +491,12 @@ a {
     padding: 0 6%;
     margin-bottom: 30px;
   }
+  .title--desktop {
+    display: none;
+  }
+  .title--mob {
+    display: block;
+  }
 
   .text--intro {
     width: 159px;
@@ -558,8 +595,29 @@ a {
     margin: 0 auto 30px auto;
   }
 
+  .buy {
+    padding: 0 0 70px 0;
+  }
   .buy__inner {
-    flex-direction: column;
+    flex-direction: column-reverse;
+  }
+  .buy__inner--item {
+    margin: 0;
+  }
+  .buy__inner--item img {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+  .buy__form {
+    margin: 30px auto 0 auto;
+  }
+  .buy__input {
+    width: 530px;
+  }
+
+  .button--buy {
+    width: 530px;
   }
 
   .footer__link {
@@ -583,6 +641,10 @@ a {
     padding: 0 7%;
   }
 
+  .button--buy {
+    width: 100%;
+  }
+
   .autor {
     padding: 70px 0 0 0;
   }
@@ -591,7 +653,10 @@ a {
   }
 
   .buy {
-    padding: 60px 0 0 0;
+    padding: 80px 0 50px 0;
+  }
+  .buy__form {
+    width: 100%;
   }
 
   .footer__inner--text {
@@ -710,6 +775,17 @@ a {
     line-height: 22px;
     padding: 18px 57px 19px 57px;
   }
+  .button--buy {
+    width: 400px;
+  }
+
+  .buy__inner {
+    justify-content: center;
+  }
+  .buy__input {
+    width: 400px;
+    height: 50px;
+  }
 }
 @media (max-width: 414px) {
   .title {
@@ -736,10 +812,20 @@ a {
     padding: 37px 23px;
   }
 
+  .buy__input {
+    width: 300px;
+  }
   .buy__inner--item img {
     display: block;
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
+  }
+  .buy__form {
+    margin: 10px auto 0 auto;
+  }
+
+  .button--buy {
+    width: 300px;
   }
 
   .footer {
@@ -782,6 +868,17 @@ a {
   .footer__inner--email {
     font-size: 15px;
     line-height: 19px;
+  }
+
+  .buy__inner--item img {
+    width: 80%;
+  }
+  .buy__input {
+    width: 290px;
+  }
+
+  .button--buy {
+    width: 290px;
   }
 }
 @media (max-width: 320px) {
