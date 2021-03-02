@@ -248,13 +248,6 @@ a {
         -webkit-box-pack: justify;
             -ms-flex-pack: justify;
                 justify-content: space-between;
-        &::before {
-            content: url('../img/intro/intro-art.svg');
-            display: block;
-            position: absolute;
-            top: 24%;
-            right: 58%;
-        }
     }
     &__img {
         display: block;
@@ -270,12 +263,6 @@ a {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-                &::before {
-                    content: url('../img/intro/date.svg');
-                    display: block;
-                    position: absolute;
-                    right: -60px;
-                }
         &--item {
             margin-bottom: 50px;
             display: -webkit-box;
